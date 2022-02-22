@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DETECT_COLISIONS : MonoBehaviour
 {
     public GameObject AGUA;

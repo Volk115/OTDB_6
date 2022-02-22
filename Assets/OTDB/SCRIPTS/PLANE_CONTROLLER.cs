@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PLANE_CONTROLLER : MonoBehaviour
 {
@@ -28,6 +29,18 @@ public class PLANE_CONTROLLER : MonoBehaviour
 
     //GAMEOVER
     public bool gameOver;
+
+    //SI COLISIONA, MUERE
+    void OnCollisionEnter(Collision otherCollider)
+    {
+        if (otherCollider.gameObject.CompareTag("SUELO")||otherCollider.gameObject.CompareTag("DRACO"))
+        {
+            gameOver = true;
+            Destroy(gameObject);
+            Debug.Log("PRUEBA");
+            SceneManager.LoadScene("DERROTA");
+        }
+    }
 
     void Start()
     {
