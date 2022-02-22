@@ -5,7 +5,7 @@ using UnityEngine;
 public class PLANE_CONTROLLER : MonoBehaviour
 {
     //VELOCIDAD LINEAL
-    private float speed = 20;
+    private float speed = 50;
     //50
     //20
 
