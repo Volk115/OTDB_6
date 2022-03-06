@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69da11ce301493944874cb8d0d38c476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
+  speed: 70
 --- !u!65 &3941869779998201485
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72,8 +72,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6252134, y: 0.6502533, z: 3.1109607}
-  m_Center: {x: -0.0030721128, y: 0.0005722046, z: 0.0074214935}
+  m_Size: {x: 2.027417, y: 1.9745636, z: 3.1109607}
+  m_Center: {x: 0.0029200315, y: -0.0143966675, z: 0.0074214935}
 --- !u!114 &-4593522601999186000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b83f885c890d544a984a58230039234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGUA: {fileID: 834043861756674498, guid: f864cf852dddb684fa856e83876bb849, type: 3}
 --- !u!1 &913338392779408076
 GameObject:
   m_ObjectHideFlags: 0

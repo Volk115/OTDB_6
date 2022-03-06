@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2964172625257104822}
   m_Layer: 0
   m_Name: PARTICULAS FUEGO
-  m_TagString: Untagged
+  m_TagString: FUEGO
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4816,5 +4816,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 16.918934, y: 17.307304, z: 4.3206196}
-  m_Center: {x: -0.041116714, y: -0.41962814, z: 1.081491}
+  m_Size: {x: 29.442661, y: 29.16605, z: 4.3206196}
+  m_Center: {x: 0.12512779, y: -0.14256668, z: 1.081491}

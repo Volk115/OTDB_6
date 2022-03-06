@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PLANE_CONTROLLER : MonoBehaviour
 {
     //VELOCIDAD LINEAL
-    private float speed = 50;
+    private float speed = 20;
     //50
     //20
 
@@ -33,7 +33,7 @@ public class PLANE_CONTROLLER : MonoBehaviour
     //SI COLISIONA, MUERE
     void OnCollisionEnter(Collision otherCollider)
     {
-        if (otherCollider.gameObject.CompareTag("SUELO")||otherCollider.gameObject.CompareTag("DRACO"))
+        if (otherCollider.gameObject.CompareTag("SUELO")|| otherCollider.gameObject.CompareTag("DRACO"))
         {
             gameOver = true;
             Destroy(gameObject);

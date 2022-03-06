@@ -11,13 +11,14 @@ public class OFFSET_PROP : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("SpawnerRandomTarget", timeSpawn, timeSpawn);
+        InvokeRepeating("SpawnRandomTarget", timeSpawn, timeSpawn);
     }
 
     private void SpawnRandomTarget()
     {
         randomOffset = Random.Range(0, 25);
-        Instantiate(particlesFire, offsetFire[randomOffset].transform.position, particlesFire.transform.rotation);
+        Instantiate(particlesFire, offsetFire[randomOffset].transform.position,
+            particlesFire.transform.rotation);
 
     }
     

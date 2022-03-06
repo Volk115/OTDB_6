@@ -11,10 +11,8 @@ public class MENU : MonoBehaviour
         {
             SceneManager.LoadScene("VIDEOJUEGO");
         }
-    }
-    public void Exit()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
+
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Application.Quit();
         }
