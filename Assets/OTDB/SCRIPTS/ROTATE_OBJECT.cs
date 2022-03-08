@@ -17,11 +17,9 @@ public class ROTATE_OBJECT : MonoBehaviour
 
     void Update()
     {
-        
         if (!playerControllerScript.gameOver)
         {
             transform.Rotate(Vector3.right * Time.deltaTime * rotateSpeed);
         }
     }
-    
 }

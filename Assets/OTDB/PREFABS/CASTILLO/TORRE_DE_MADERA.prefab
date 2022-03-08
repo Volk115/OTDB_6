@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 8460279298065450424}
   m_Layer: 0
   m_Name: TORRE_DE_MADERA
-  m_TagString: Untagged
+  m_TagString: SUELO
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

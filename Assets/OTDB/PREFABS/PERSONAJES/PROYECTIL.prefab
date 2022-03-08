@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2606488297750722351}
   - component: {fileID: 3941869779998201485}
   - component: {fileID: -4593522601999186000}
-  m_Layer: 0
+  - component: {fileID: 6976433467029881313}
+  m_Layer: 7
   m_Name: PROYECTIL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,6 +88,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AGUA: {fileID: 834043861756674498, guid: f864cf852dddb684fa856e83876bb849, type: 3}
+  GameManagerScript: {fileID: 0}
+  explosionParticleSystem: {fileID: 19861012, guid: 0f75f6db4a318f54382e0c98b2226db8, type: 3}
+--- !u!54 &6976433467029881313
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806796495213117697}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &913338392779408076
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +117,7 @@ GameObject:
   - component: {fileID: 1000254790504647195}
   - component: {fileID: 4120264927633931940}
   - component: {fileID: 8839694062485035813}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PROYECTIL_DESPLEGADO_PLUMAS_TELA_2_ASPA_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +198,7 @@ GameObject:
   - component: {fileID: 8652570675271969420}
   - component: {fileID: 8538642339938621942}
   - component: {fileID: 7093561031883367257}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_PROYECTIL_DESPLEGADO_BARRIL_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +279,7 @@ GameObject:
   - component: {fileID: 1011734183213028073}
   - component: {fileID: 8643582048749363329}
   - component: {fileID: 4161827567693278638}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_PROYECTIL_DESPLEGADO_METAL_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +360,7 @@ GameObject:
   - component: {fileID: 42744095966829151}
   - component: {fileID: 3573917997268492170}
   - component: {fileID: 3242703012099644955}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PROYECTIL_DESPLEGADO_TRONCO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +441,7 @@ GameObject:
   - component: {fileID: 2280498848298765982}
   - component: {fileID: 3419495825051593749}
   - component: {fileID: 3223080378953855778}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: METAL_3_BARRIL_PROYECTIL_DESPLEGADO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +522,7 @@ GameObject:
   - component: {fileID: 6375205633636570645}
   - component: {fileID: 3425312101156203921}
   - component: {fileID: 612935561707079477}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PROYECTIL_DESPLEGADO_PLUMAS_ASPA_2_MADERA_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +603,7 @@ GameObject:
   - component: {fileID: 4602792109004967535}
   - component: {fileID: 8760987748656244345}
   - component: {fileID: 589096845941794150}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PROYECTIL_DESPLEGADO_ASPA_3_PLUMAS_MADERA_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,7 +684,7 @@ GameObject:
   - component: {fileID: 1469657181913198350}
   - component: {fileID: 5897105313650330107}
   - component: {fileID: 632305283971889578}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_PROYECTIL_DESPLEGADO_METAL_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +765,7 @@ GameObject:
   - component: {fileID: 8430657021964762527}
   - component: {fileID: 2464615390223357185}
   - component: {fileID: 25409192537840957}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_PROYECTIL_DESPLEGADO_TAPON
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +846,7 @@ GameObject:
   - component: {fileID: 8504718925003709409}
   - component: {fileID: 459101784332983220}
   - component: {fileID: 8992955960203423570}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PROYECTIL_DESPLEGADO_PLUMAS_ASPA_1_MADERA_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -908,7 +927,7 @@ GameObject:
   - component: {fileID: 1171637861289271244}
   - component: {fileID: 861036432390419738}
   - component: {fileID: 1434324159417372367}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_PROYECTIL_DESPLEGADO_METAL_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -989,7 +1008,7 @@ GameObject:
   - component: {fileID: 4831140720181970551}
   - component: {fileID: 6488101600983571865}
   - component: {fileID: 440308754466134337}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PROYECTIL_DESPLEGADO_PLUMAS_TELA_1_ASPA_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1070,7 +1089,7 @@ GameObject:
   - component: {fileID: 6476411844809014442}
   - component: {fileID: 6575771263757177911}
   - component: {fileID: 6309838213106855701}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_PROYECTIL_DESPLEGADO_METAL_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1151,7 +1170,7 @@ GameObject:
   - component: {fileID: 7124986289045970315}
   - component: {fileID: 4321770727688548040}
   - component: {fileID: 4150248838356223152}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PROYECTIL_DESPLEGADO_TELA_3_ASPA_3_PLUMAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1232,7 +1251,7 @@ GameObject:
   - component: {fileID: 6967733926833003549}
   - component: {fileID: 1499979785850143042}
   - component: {fileID: 6875750870231702309}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_PROYECTIL_DESPLEGADO_BARRIL_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

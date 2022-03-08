@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 4457982045072133625}
   m_Layer: 0
   m_Name: ROCA_3
-  m_TagString: Untagged
+  m_TagString: SUELO
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -6,9 +6,7 @@ using UnityEngine.SceneManagement;
 public class PLANE_CONTROLLER : MonoBehaviour
 {
     //VELOCIDAD LINEAL
-    private float speed = 20;
-    //50
-    //20
+    public float speed = 50;
 
     //LIMITES
     private float rightlim = -350;
@@ -27,8 +25,20 @@ public class PLANE_CONTROLLER : MonoBehaviour
     public GameObject barril;
     public GameObject positionBarril;
 
+    //EFECTOS DE SONIDO
+    private AudioSource playerAudioSource;
+
+    public AudioClip balistaClip;
+    public AudioClip bombaClip;
+
     //GAMEOVER
     public bool gameOver;
+
+    //SE TARDARA UN CIERTO TIEMP PARA VOLVER A DISPARAR
+    private bool canShotBalista = true;
+    private bool canShotBarril = true;
+    private float barrilcoldown = 6f;
+    private float balistacoldown = 3f;
 
     //SI COLISIONA, MUERE
     void OnCollisionEnter(Collision otherCollider)
@@ -42,10 +52,10 @@ public class PLANE_CONTROLLER : MonoBehaviour
         }
     }
 
+    //APARECE EN LA POSICION:
     void Start()
     {
         transform.position = new Vector3(330, 160, 0);
-        
     }
 
     void Update()
@@ -73,16 +83,19 @@ public class PLANE_CONTROLLER : MonoBehaviour
             }
 
             //USO DE PROYECTILES
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0) && canShotBalista == true)
             {
+                StartCoroutine(balistaTimer());
                 Instantiate(proyectil, transform.position, gameObject.transform.rotation);
+                playerAudioSource.PlayOneShot(balistaClip, 1);
             }
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && canShotBarril == true)
             {
+                StartCoroutine(barrilTimer());
                 Instantiate(barril, positionBarril.transform.position, gameObject.transform.rotation);
+                playerAudioSource.PlayOneShot(bombaClip, 1);
             }
-
         }
 
         //LIMITES
@@ -100,8 +113,21 @@ public class PLANE_CONTROLLER : MonoBehaviour
         
         if(transform.position.y >= uplim)
         { transform.position = new Vector3(transform.position.x, uplim, transform.position.z); }
-        
-        
+    }
 
+    //1-NO PUEDE DISPARAR 2-ESPERA UN TIEMPO 3-PUEDE DISPARAR
+    public IEnumerator balistaTimer()
+    {
+        canShotBalista = false;
+        yield return new WaitForSeconds(balistacoldown);
+        canShotBalista = true;
+    }
+
+    //1-NO PUEDE DISPARAR 2-ESPERA UN TIEMPO 3-PUEDE DISPARAR
+    public IEnumerator barrilTimer()
+    {
+        canShotBarril = false;
+        yield return new WaitForSeconds(barrilcoldown);
+        canShotBarril = true;
     }
 }

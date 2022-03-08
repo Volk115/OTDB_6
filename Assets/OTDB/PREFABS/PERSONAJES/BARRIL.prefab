@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5289771267739123799}
   - component: {fileID: 2233404723029195741}
   - component: {fileID: 3430364023835769884}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_METAL_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 1925584448166243116}
   - component: {fileID: 982877160436134779}
   - component: {fileID: 975061002282510272}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_METAL_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 7681127693441883485}
   - component: {fileID: 1695436298688826956}
   - component: {fileID: 5426692920274125243}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_1_BARRIL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 2025937205026116528}
   - component: {fileID: 222279003573500358}
   - component: {fileID: 8893860923813595522}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_METAL_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 6284992554826629713}
   - component: {fileID: 7813659194990309857}
   - component: {fileID: 1268916471299062001}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_BARRIL_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 4354550905349774451}
   - component: {fileID: 8896077336784953932}
   - component: {fileID: 941492593829975666}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_TAPON
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,8 +499,7 @@ GameObject:
   - component: {fileID: 4335746091280640886}
   - component: {fileID: 7985476098826236067}
   - component: {fileID: -6756595019216690001}
-  - component: {fileID: -1711021177489998336}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,18 +583,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AGUA: {fileID: 834043861756674498, guid: f864cf852dddb684fa856e83876bb849, type: 3}
---- !u!114 &-1711021177489998336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6699464557187185597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17ab895aca77c2e4596dd2d149b4b6f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  GameManagerScript: {fileID: 0}
+  explosionParticleSystem: {fileID: 19861012, guid: 0f75f6db4a318f54382e0c98b2226db8, type: 3}
 --- !u!1 &7742672041007157430
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +596,7 @@ GameObject:
   - component: {fileID: 7061683320776184437}
   - component: {fileID: 2392250608148508057}
   - component: {fileID: 1651784259567469210}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_METAL_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +677,7 @@ GameObject:
   - component: {fileID: 3021460005157891955}
   - component: {fileID: 2747380617191206958}
   - component: {fileID: 1559787325652319188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BARRIL_METAL_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -6,7 +6,7 @@ public class OFFSET_PROP : MonoBehaviour
 {
     public GameObject particlesFire;
     public GameObject[] offsetFire;
-    private float timeSpawn = 1f;
+    private float timeSpawn = 5f;
     private int randomOffset;
 
     void Start()
@@ -16,7 +16,7 @@ public class OFFSET_PROP : MonoBehaviour
 
     private void SpawnRandomTarget()
     {
-        randomOffset = Random.Range(0, 25);
+        randomOffset = Random.Range(0, offsetFire.Length);
         Instantiate(particlesFire, offsetFire[randomOffset].transform.position,
             particlesFire.transform.rotation);
 

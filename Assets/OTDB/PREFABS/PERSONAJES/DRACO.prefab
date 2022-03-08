@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 2399915327988096980}
   - component: {fileID: 1000535277646663306}
   - component: {fileID: 8859705482813158771}
+  - component: {fileID: -3060325385694067601}
   m_Layer: 0
   m_Name: DRACO
   m_TagString: DRACO
@@ -225,6 +226,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.8859024, y: 0.1078593, z: 0.6575975}
   m_Center: {x: -0.008548418, y: 0.040208183, z: -0.111525804}
+--- !u!114 &-3060325385694067601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3028080217660753262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4bc7f690fcfe54990ce99b56b34e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionParticleSystem: {fileID: 19861012, guid: 0f75f6db4a318f54382e0c98b2226db8, type: 3}
+  gameOver: 0
 --- !u!1 &6110590972327174273
 GameObject:
   m_ObjectHideFlags: 0
